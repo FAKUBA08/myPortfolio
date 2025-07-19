@@ -3,7 +3,7 @@ import Styles from "../Styles/Projects.module.css"
 import Nav from './Nav'
 function Project() {
   return (
-    <div className={Styles.Work}>
+    <div>
          <div>
          <Nav/>
         </div>

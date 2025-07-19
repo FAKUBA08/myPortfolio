@@ -1,0 +1,190 @@
+  @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  user-select: none;
+  }
+
+  .navHome{
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  font-variation-settings:
+  "slnt" 0,
+  "wdth" 600;
+  font-weight: 500;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 78%;
+  margin: 0 auto;
+  }
+  .newFlex{
+  display: flex;
+  align-items: center;
+  }
+  .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+
+  .purple {
+  color: #8b5cf6;
+  }
+
+  .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #8b5cf6;
+  border-radius: 50%;
+  margin-left: 5px;
+  }
+
+  .links {
+  display: flex;
+  gap: 1.4rem;
+  }
+
+  .link {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  font-size: 17px;
+  }
+  .darkNav .link {
+  color: #f3f4f6dc;
+  }
+  .active {
+  color: #8b5cf6;
+  }
+
+  .active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #8b5cf6;
+  bottom: -4px;
+  left: 0;
+  }
+
+  .toggle {
+  width: 40px;
+  height: 24px;
+  border-radius: 999px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6px;
+  cursor: pointer;
+  }
+  .link {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  position: relative;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+  }
+
+  .link:hover {
+  color: #8b5cf6;
+  }
+
+  .active {
+  color: #8b5cf6;
+  }
+
+  .active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #8b5cf6;
+  bottom: -4px;
+  left: 0;
+  }
+  .toggleWrapper {
+  width: 80px;
+  height: 36px;
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 4px;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  }
+
+  .toggleWrapper.dark {
+  background-color: #1f2937;
+  }
+
+  /* The track's preview icons */
+  .iconOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  pointer-events: none;
+  }
+
+  .sunGhost,
+  .moonGhost {
+  opacity: 0.3;
+  color: #f59e0b;
+  transition: opacity 0.3s ease;
+  }
+
+  .toggleWrapper.dark .sunGhost {
+  opacity: 0.3;
+  color: #f59e0b;
+  }
+
+  .toggleWrapper.dark .moonGhost {
+  opacity: 0.8;
+  color: #64748b;
+  }
+
+  .toggleThumb {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+  z-index: 2;
+  }
+
+  .toggleWrapper.dark .toggleThumb {
+  transform: translateX(44px);
+  }
+
+

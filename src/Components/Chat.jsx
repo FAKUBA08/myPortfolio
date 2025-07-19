@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, MessageCircle, ExternalLink } from 'lucide-react';
-import styles from '../Styles/Chat.module.css';
+import Styles from '../Styles/Chat.module.css';
 import { useNavigate } from 'react-router-dom';
 
 function Chat({ isOpen, onClose, onContactRedirect }) {
@@ -154,39 +154,39 @@ function Chat({ isOpen, onClose, onContactRedirect }) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className={styles.chatOverlay}
+          className={Styles.chatOverlay}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className={styles.chatWindow}
+            className={Styles.chatWindow}
             initial={{ scale: 0.8, y: 50 }}
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.8, y: 50 }}
             transition={{ duration: 0.3 }}
           >
             {/* Header */}
-            <div className={styles.chatHeader}>
-              <div className={styles.headerInfo}>
+            <div className={Styles.chatHeader}>
+              <div className={Styles.headerInfo}>
                 <div style={{ padding: '0.5rem', background: 'rgba(102, 126, 234, 0.1)', borderRadius: '0.75rem' }}>
                   <MessageCircle size={20} color="white" />
                 </div>
                 <div>
                   <h3>AI Assistant</h3>
-                  <span className={`${styles.status} ${styles.connected}`}>Online</span>
+                  <span className={`${Styles.status} ${Styles.connected}`}>Online</span>
                 </div>
               </div>
-              <button className={styles.closeButton} onClick={onClose} aria-label="Close chat">
+              <button className={Styles.closeButton} onClick={onClose} aria-label="Close chat">
                 <X size={20} color="white" />
               </button>
             </div>
 
             {/* Messages */}
-            <div className={styles.chatMessages}>
+            <div className={Styles.chatMessages}>
               {messages.length === 0 && (
-                <div className={styles.emptyState}>
+                <div className={Styles.emptyState}>
                   <p>No messages yet. Say hi!</p>
                 </div>
               )}
@@ -195,23 +195,23 @@ function Chat({ isOpen, onClose, onContactRedirect }) {
                 return (
                   <motion.div
                     key={message.id}
-                    className={`${styles.message} ${isUser ? styles.userMessage : styles.otherMessage}`}
+                    className={`${Styles.message} ${isUser ? Styles.userMessage : Styles.otherMessage}`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className={styles.messageText}>
+                    <div className={Styles.messageText}>
                       <p>{message.text}</p>
                       {message.isContactRedirect && (
                         <button
-                          className={styles.sendButton1}
+                          className={Styles.sendButton1}
                            onClick={()=>navigate('/contact')}
                           type="button"
                         >
                           Go to Contact Page <ExternalLink size={18} />
                         </button>
                       )}
-                      <div className={styles.messageTime}>
+                      <div className={Styles.messageTime}>
                         {message.timestamp.toLocaleTimeString([], {
                           hour: '2-digit',
                           minute: '2-digit'
@@ -224,14 +224,14 @@ function Chat({ isOpen, onClose, onContactRedirect }) {
 
               {isTyping && (
                 <motion.div
-                  className={styles.otherMessage}
+                  className={Styles.otherMessage}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  <div className={styles.messageText} style={{ display: 'flex', gap: '0.25rem' }}>
-                    <div className={`${styles.typingDot} ${styles.bounce}`} />
-                    <div className={`${styles.typingDot} ${styles.bounce}`} style={{ animationDelay: '0.1s' }} />
-                    <div className={`${styles.typingDot} ${styles.bounce}`} style={{ animationDelay: '0.2s' }} />
+                  <div className={Styles.messageText} style={{ display: 'flex', gap: '0.25rem' }}>
+                    <div className={`${Styles.typingDot} ${Styles.bounce}`} />
+                    <div className={`${Styles.typingDot} ${Styles.bounce}`} style={{ animationDelay: '0.1s' }} />
+                    <div className={`${Styles.typingDot} ${Styles.bounce}`} style={{ animationDelay: '0.2s' }} />
                   </div>
                 </motion.div>
               )}
@@ -240,18 +240,18 @@ function Chat({ isOpen, onClose, onContactRedirect }) {
             </div>
 
             {/* Input */}
-            <form onSubmit={handleSendMessage} className={styles.chatInputForm}>
+            <form onSubmit={handleSendMessage} className={Styles.chatInputForm}>
               <input
                 type="text"
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 placeholder="Ask me anything about our services..."
-                className={styles.chatInput}
+                className={Styles.chatInput}
               />
               <button
                 type="submit"
                 disabled={!inputMessage.trim()}
-                className={styles.sendButton}
+                className={Styles.sendButton}
                 aria-label="Send message"
               >
                 <Send size={20} color="white" />

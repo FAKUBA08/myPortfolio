@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Nav from "../Components/Nav";
-import Styles from '../styles/Landing.module.css';
+import Styles from '../Styles/Landing.module.css';
 import Chat from "../Components/chat";
 import { Sun, Moon, X, Home, User, FolderOpen, Mail, Github, Linkedin } from 'lucide-react';
 import '/index.css';

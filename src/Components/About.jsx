@@ -1,8 +1,8 @@
 import React from 'react'
-import Styles from "../Styles/Blog.module.css"
-import Nav from "./Nav"
+import Styles from "../Styles/About.module.css"
+import Nav from "../Components/Nav"
 
-function Blog() {
+function About() {
   return (
     <div className={Styles.Blog}>
        <div>
@@ -15,4 +15,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default About;

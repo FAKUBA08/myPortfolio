@@ -1,7 +1,7 @@
 import React from 'react'
-import Styles from "../Styles/Work.module.css"
+import Styles from "../Styles/Projects.module.css"
 import Nav from './Nav'
-function Work() {
+function Project() {
   return (
     <div className={Styles.Work}>
          <div>
@@ -14,4 +14,4 @@ function Work() {
   )
 }
 
-export default Work
+export default Project;

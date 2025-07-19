@@ -4,7 +4,7 @@ import { X, Send, MessageCircle, ExternalLink } from 'lucide-react';
 import Styles from '../Styles/Chat.module.css';
 import { useNavigate } from 'react-router-dom';
 
-function Chat({ isOpen, onClose, onContactRedirect }) {
+function LetChat({ isOpen, onClose, onContactRedirect }) {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -264,4 +264,4 @@ function Chat({ isOpen, onClose, onContactRedirect }) {
   );
 }
 
-export default Chat;
+export default LetChat;

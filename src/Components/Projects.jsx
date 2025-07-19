@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from "../Styles/work.module.css"
+import Styles from "../Styles/Work.module.css"
 import Nav from './Nav'
 function Work() {
   return (

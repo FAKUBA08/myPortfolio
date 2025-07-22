@@ -45,7 +45,6 @@ const SingleProject = () => {
     fetchOtherProjects();
   }, [projectId]);
 
-  // Measure heights of other project cards and set maxHeight
   useEffect(() => {
     if (otherProjects.length && cardRefs.current.length === otherProjects.length) {
       const heights = cardRefs.current.map(el => el?.offsetHeight || 0);

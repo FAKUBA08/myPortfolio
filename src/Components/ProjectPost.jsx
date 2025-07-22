@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
-import Styles from '../Styles/projectPost.module.css';
+import Styles from '../Styles/ProjectPost.module.css';
 import { ClipLoader, RingLoader } from 'react-spinners';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';

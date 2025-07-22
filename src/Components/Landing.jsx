@@ -5,6 +5,7 @@ import LetChat from '../Components/LetChat';
 import { Sun, Moon, X, Home, User, FolderOpen, Mail, Github, Linkedin } from 'lucide-react';
 import Project from "../Components/Project";
 import '/index.css';
+import { useNavigate } from 'react-router-dom';
 
 import { motion } from 'framer-motion';
 
@@ -17,7 +18,7 @@ function Landing() {
 const [showChat, setShowChat] = useState(false);
 
   const words = ['responsive UIs', 'web applications', 'user interfaces', 'modern websites'];
-
+  const navigate = useNavigate();
   useEffect(() => {
     const currentWord = words[currentWordIndex];
     let delay = isDeleting ? 50 : 100;

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Nav from "../Components/Nav";
 import Styles from '../Styles/Landing.module.css';
-import Chat from '../Componenets/LetChat';
+import LetChat from '../Components/LetChat';
 import { Sun, Moon, X, Home, User, FolderOpen, Mail, Github, Linkedin } from 'lucide-react';
+import Project from "../Components/Project";
 import '/index.css';
 
 import { motion } from 'framer-motion';
@@ -220,7 +221,10 @@ const [showChat, setShowChat] = useState(false);
 
 
       )}
-       {showChat && <Chat isOpen={true} onClose={() => setShowChat(false)} />}
+       {showChat && <LetChat isOpen={true} onClose={() => setShowChat(false)} />}
+        <div>
+          <Project />
+        </div>
     </div>
   );
 }

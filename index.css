@@ -3,16 +3,19 @@
   --background-color: #ffffff;
   --text-color: #1f2937;
   --link-color:#1f2937d5;
+  --other-color: #f9f9f9;
 }
 
 body.dark {
   --background-color: #111827;
   --text-color: #f9fafb;
    --link-color:#f9fafbd8;
+    --other-color: #111827;
 }
 
 body {
   background-color: var(--background-color);
+
   color: var(--text-color);
   color: var(--link-color);
   transition: background-color 0.3s ease, color 0.3s ease;

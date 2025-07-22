@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.adminPortfolioContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #444;
+  background-color: #012f95;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ position: relative;
+ top: 2rem;
+}
+
+.adminPortfolioContainer h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+color: white;
+  text-transform: uppercase;
+}
+
+.adminPortfolioContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 35px;
+color: white;
+  position: relative;
+}
+
+.adminPortfolioContainer h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+background-color: white;
+  border-radius: 10px;
+}
+
+.adminPortfolioContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.adminPortfolioContainer form input,
+.adminPortfolioContainer form textarea,
+.adminPortfolioContainer form button,
+.adminPortfolioContainer form .ql-editor {
+  padding: 18px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.adminPortfolioContainer form input:focus,
+.adminPortfolioContainer form textarea:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(1, 47, 149, 0.2);
+  background-color: #f8f9fc;
+
+}
+
+.adminPortfolioContainer form .ql-editor {
+  min-height: 220px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  color: #444;
+}
+
+.adminPortfolioContainer form .ql-editor:focus {
+  background-color: #f0f4f7;
+}
+
+.adminPortfolioContainer form button {
+  background-color: #012f95;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  max-width: 220px;
+  align-self: center;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.adminPortfolioContainer form button:hover {
+  background-color: #5e54d8;
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.adminPortfolioContainer .errorMessage {
+  color: #e74c3c;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.adminPortfolioContainer ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.adminPortfolioContainer li {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adminPortfolioContainer li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.adminPortfolioContainer li img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 16px;
+}
+
+.adminPortfolioContainer li:hover img {
+  opacity: 0.85;
+}
+
+.adminPortfolioContainer li h3 {
+  font-size: 1.4rem;
+  margin: 20px;
+  color: #333333; 
+  font-weight: 700;
+}
+
+.adminPortfolioContainer li p {
+  font-size: 14px;
+  margin: 10px 20px;
+  color: rgba(0, 0, 0, 0.623);
+  line-height: 1.6;
+}
+
+.adminPortfolioContainer li button {
+  margin: 20px;
+  padding: 12px 24px;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.adminPortfolioContainer li button:first-child {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.adminPortfolioContainer li button:first-child:hover {
+  background-color: #5e54d8;
+  transform: translateY(-3px);
+}
+
+.adminPortfolioContainer li button:last-child {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.adminPortfolioContainer li button:last-child:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+}
+
+.quillEditor img{
+  width:20%;
+
+}
+.inputGroup{
+font-weight: 300;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .adminPortfolioContainer {
+    max-width: 95%;
+    padding: 30px;
+    position: relative;
+  }
+
+  .adminPortfolioContainer h1 {
+    font-size: 30px;
+  }
+
+  .adminPortfolioContainer h2 {
+    font-size: 26px;
+  }
+
+  .adminPortfolioContainer form {
+    padding: 20px;
+  }
+
+  .adminPortfolioContainer form input,
+  .adminPortfolioContainer form textarea,
+  .adminPortfolioContainer form button {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .adminPortfolioContainer li {
+    padding: 8px;
+  }
+
+  .adminPortfolioContainer li h3 {
+    font-size: 1.2rem;
+  }
+
+  .adminPortfolioContainer li p {
+    font-size: 13px;
+  }
+
+  .adminPortfolioContainer li img {
+    height: 200px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .adminPortfolioContainer {
+    max-width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .adminPortfolioContainer h1 {
+    font-size: 26px;
+  }
+
+  .adminPortfolioContainer h2 {
+    font-size: 22px;
+  }
+
+  .adminPortfolioContainer form {
+    gap: 15px;
+    /* padding: 15px; */
+  }
+
+  .adminPortfolioContainer form input,
+  .adminPortfolioContainer form textarea,
+  .adminPortfolioContainer form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .adminPortfolioContainer ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .adminPortfolioContainer li {
+    padding: 6px;
+  }
+
+  .adminPortfolioContainer li img {
+    height: 180px;
+  }
+
+  .adminPortfolioContainer li h3 {
+    font-size: 1rem;
+  }
+
+  .adminPortfolioContainer li p {
+    font-size: 12px;
+  }
+
+  .adminPortfolioContainer li button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

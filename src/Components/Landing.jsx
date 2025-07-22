@@ -82,8 +82,8 @@ const [showChat, setShowChat] = useState(false);
                 Fullstack developer with over years of experience building web apps using React, Next.js, Tailwind CSS, and Node.js. Focused on creating performant interfaces and clean, scalable backend solutions
               </p>
 
-              <div className={Styles.buttonGroup}>
-                <button className={Styles.primaryButton}>
+              <div className={Styles.buttonGroup} >
+                <button className={Styles.primaryButton} onClick={()=>Navigate("/projects")}>
                   View My Work
                   <svg className={`${Styles.icon} ${Styles.arrowIcon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

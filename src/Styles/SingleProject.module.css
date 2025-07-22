@@ -686,7 +686,12 @@
 .otherTitle {
  font-size:18px;
 }
-
+.portfolioTitleUp{
+  font-size: 19px;
+}
+.portfolioSubcontentUp{
+  font-size: 16px;
+}
 }
  .otherTitle {
 

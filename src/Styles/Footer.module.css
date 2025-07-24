@@ -19,6 +19,7 @@ font-style: normal;
 font-variation-settings:
 "slnt" 0,
 "wdth" 600;
+background-color: var(--backgound-color);
 
 }
 
@@ -151,3 +152,9 @@ padding-top: 10px;
 color: var(--text-color);
 }
 
+@media only screen and (max-width: 480px) {
+.footerContent {
+max-width: 92%;
+
+}
+}

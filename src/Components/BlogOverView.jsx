@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../Styles/BlogOverView.module.css';
+import Styles from '../Styles/BlogOverview.module.css';
 import { FaCode, FaDatabase, FaTools, FaLightbulb } from 'react-icons/fa';
 
 function BlogOverView() {

@@ -1,0 +1,346 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.membership {
+  background-color: var(--other-color);
+  color: var(--text-color);
+ font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 600;
+  padding: 2rem 0;
+  transform: translateY(3rem);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #9333ea, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.coursesSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.courseCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.courseCard {
+  background-color: var(--background-color);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard:hover {
+  border-color: #9333ea;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(147, 51, 234, 0.15);
+}
+
+.courseCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #9333ea;
+}
+
+.courseCard p {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.courseCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.courseCard li {
+  padding: 0.25rem 0;
+  color: var(--text-color);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.courseCard li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.formSection {
+  background-color: var(--background-color);
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  margin-bottom: 2rem;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #9333ea;
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.submitBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #9333ea, #c084fc);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.3);
+}
+
+.contactSection {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.contactText {
+  margin-bottom: 1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+   font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 600;
+}
+
+.whatsappBtn:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  .content {
+    gap: 2rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .courseCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership {
+    padding: 1rem 0;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .courseCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .formSection {
+    padding: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .courseCard {
+    padding: 1rem;
+  }
+  
+  .formSection {
+    padding: 1rem;
+  }
+  
+  .inputGroup input,
+  .inputGroup select {
+    padding: 0.6rem;
+  }
+  .sectionTitle {
+font-size: 1.4rem;
+text-align: center;
+}
+
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.25rem;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .courseCard h3 {
+    font-size: 1.1rem;
+  }
+  
+  .formTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .courseCard {
+    padding: 0.75rem;
+  }
+  
+  .formSection {
+    padding: 0.75rem;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}

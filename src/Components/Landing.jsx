@@ -9,8 +9,9 @@ import About from "../Components/About"
 import Testimonial from '../Components/Testimonial';
 import '/index.css';
 import { useNavigate } from 'react-router-dom';
-
+import Membership from '../Components/Membership';
 import { motion } from 'framer-motion';
+import Footer from '../Components/Footer';
 
 function Landing() {
   const [displayText, setDisplayText] = useState('');
@@ -232,9 +233,16 @@ const [showChat, setShowChat] = useState(false);
             <div>
               <BlogOverview/>
             </div>
-                  <div><Testimonial/></div>
-              {/* <div><About/></div> */}
 
+                  <div><Testimonial/></div>
+                    <div><About/></div>
+                    <div>
+              <Membership/>
+            </div>
+            
+         <div>
+              <Footer/>
+            </div>
 
     </div>
   );

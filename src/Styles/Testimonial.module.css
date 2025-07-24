@@ -356,7 +356,7 @@
     padding: 0 3rem;
     }
 
-    .title {
+ .header .title {
     font-size: 3.5rem;
     }
 
@@ -380,8 +380,7 @@
     .maxWidth {
     padding: 0 2.5rem;
     }
-
-    .title {
+ .header .title {
     font-size: 3rem;
     }
 
@@ -400,11 +399,11 @@
     padding: 0 2rem;
     }
 
-    .title {
+  .header .title {
     font-size: 2.5rem;
     }
 
-    .subtitle {
+   .header .subtitle {
     font-size: 1.125rem;
     }
 
@@ -454,11 +453,11 @@
     margin-bottom: 3rem;
     }
 
-    .title {
+ .header .title {
     font-size: 2.25rem;
     }
 
-    .subtitle {
+  .header .subtitle {
     font-size: 1rem;
     }
 
@@ -525,12 +524,12 @@
     margin-bottom: 2.5rem;
     }
 
-    .title {
+    .header .title {
     font-size: 2rem;
     margin-bottom: 1rem;
     }
 
-    .subtitle {
+  .header .subtitle {
     font-size: 0.875rem;
     }
 
@@ -600,3 +599,223 @@
     }
     }
 
+
+
+/* Mobile Medium: 321px - 375px */
+@media (max-width: 375px){
+  .container {
+    padding: 2rem 0;
+  }
+  
+  .maxWidth {
+    padding: 0 0.75rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+ .header .title {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+ .header .subtitle{
+    font-size: 0.875rem;
+  }
+  
+  .cardInner {
+    padding: 1.25rem;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  
+  .testimonialText {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .authorName {
+    font-size: 0.875rem;
+  }
+  
+  .pagination {
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  
+  .miniCard {
+    padding: 0.75rem;
+  }
+  
+  .miniContent {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* Mobile Small: 280px - 320px */
+@media (max-width: 320px) {
+  .container {
+    padding: 1.5rem 0;
+  }
+  
+  .maxWidth {
+    padding: 0 0.5rem;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+  }
+  
+ .header .title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+   .header .subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .cardInner {
+    padding: 1rem;
+  }
+  
+  .cardLayout {
+    gap: 1rem;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 0.875rem;
+  }
+  
+  .quoteIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .rating {
+    margin-bottom: 1rem;
+  }
+  
+  .star {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .testimonialText {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .authorName {
+    font-size: 0.75rem;
+  }
+  
+  .authorRole {
+    font-size: 0.625rem;
+  }
+  
+  .pagination {
+    margin-bottom: 1.5rem;
+    gap: 0.375rem;
+  }
+  
+  .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  .miniCard {
+    padding: 0.625rem;
+  }
+  
+  .miniCardHeader {
+    gap: 0.375rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .miniAvatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+  }
+  
+  .miniAuthorName {
+    font-size: 0.625rem;
+  }
+  
+  .miniCompany {
+    font-size: 0.5rem;
+  }
+  
+  .miniRating {
+    margin-bottom: 0.5rem;
+  }
+  
+  .miniRating .star {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  .miniContent {
+    font-size: 0.625rem;
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* Animation and Interaction Enhancements */
+@media (prefers-reduced-motion: no-preference) {
+  .mainCard {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .miniCard:nth-child(1) { animation-delay: 0.1s; }
+  .miniCard:nth-child(2) { animation-delay: 0.2s; }
+  .miniCard:nth-child(3) { animation-delay: 0.3s; }
+  .miniCard:nth-child(4) { animation-delay: 0.4s; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+.navButton:focus,
+.dot:focus,
+.miniCard:focus {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .mainCard {
+    border: 2px solid rgb(var(--foreground));
+  }
+  
+  .star {
+    stroke: currentColor;
+    stroke-width: 1;
+  }
+}

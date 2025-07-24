@@ -3,6 +3,7 @@ import { publicRequest } from '../Shared/RequestApi';
 import { useNavigate } from 'react-router-dom';
 import Styles from '../Styles/Project.module.css';
 
+
 const Project = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);

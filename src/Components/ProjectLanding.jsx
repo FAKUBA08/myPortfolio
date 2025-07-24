@@ -3,6 +3,7 @@ import { publicRequest } from '../Shared/RequestApi';
 import { useNavigate } from 'react-router-dom';
 import Styles from '../Styles/ProjectLanding.module.css';
 import Nav from '../Components/Nav';
+import Footer from "../Components/Footer"
 
 const ProjectLanding = () => {
   const [projects, setProjects] = useState([]);
@@ -183,7 +184,11 @@ const ProjectLanding = () => {
             )}
           </>
         )}
+   
       </div>
+           <div>
+          <Footer/>
+        </div>
     </div>
   );
 };

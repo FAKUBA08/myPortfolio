@@ -3,7 +3,10 @@ import Nav from "../Components/Nav";
 import Styles from '../Styles/Landing.module.css';
 import LetChat from '../Components/LetChat';
 import { Sun, Moon, X, Home, User, FolderOpen, Mail, Github, Linkedin } from 'lucide-react';
+import BlogOverview from "../Components/BlogOverView"
 import Project from "../Components/Project";
+import About from "../Components/About"
+import Testimonial from '../Components/Testimonial';
 import '/index.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -226,6 +229,13 @@ const [showChat, setShowChat] = useState(false);
         <div>
           <Project />
         </div>
+            <div>
+              <BlogOverview/>
+            </div>
+                  <div><Testimonial/></div>
+              {/* <div><About/></div> */}
+
+
     </div>
   );
 }

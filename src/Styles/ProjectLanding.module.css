@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 
 * {
   padding: 0;
@@ -120,7 +121,7 @@
 }
 
 .portfolioTitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text-color);
   margin-bottom: 12px;
@@ -160,6 +161,17 @@
 
 .viewDetailsButton:hover {
   color: #7C3AED;
+}
+.noProjects{
+ text-align: center;
+    font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+  "slnt" 0,
+  "wdth" 600;
+  font-weight: 500;
+  margin: 0 auto;
 }
 
 .actionIcons {

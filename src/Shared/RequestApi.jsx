@@ -1,5 +1,4 @@
 import axios from "axios";
-// import { toast } from "react-toastify"; 
 
 const baseURL =
   import.meta.env.MODE === "production"

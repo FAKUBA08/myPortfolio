@@ -30,7 +30,7 @@ function Membership() {
     try {
       const response = await publicRequest.post('/membership', formData)
       toast.success("Thank you for contacting us. We'll get back to you soon", {
-        position: 'bottom-right',
+      position: 'top-right',
         autoClose: 10000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -62,6 +62,7 @@ function Membership() {
 
   return (
     <div className={Styles.membership}>
+        
       <div className={Styles.container}>
         <div className={Styles.header}>
           <h1 className={Styles.title}>Join Our Development Program</h1>
@@ -194,7 +195,6 @@ function Membership() {
           </div>
         </div>
       </div>
-      <ToastContainer />
     </div>
   )
 }

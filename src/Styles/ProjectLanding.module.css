@@ -44,7 +44,7 @@
 }
 
 .portfolioCard {
-  background-color: var(--background-color);
+  background-color: var(--new-color);
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -172,6 +172,7 @@
   "wdth" 600;
   font-weight: 500;
   margin: 0 auto;
+  margin-top:2rem;
 }
 
 .actionIcons {

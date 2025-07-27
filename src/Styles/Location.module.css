@@ -1,0 +1,229 @@
+        
+          @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
+        .LocationContainer {
+        max-width: 80%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:var(--backgound-color);
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        border-top: 5px solid #8b5cf6;
+        gap: 2rem;
+             font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0,
+        "wdth" 600;
+        }
+
+        .left {
+        flex: 1;
+        min-width: 300px;
+        }
+
+        .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        }
+
+        .highlight {
+        color: #8b5cf6;
+        font-weight: 600;
+        }
+
+        .features {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+        }
+
+        .features li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color:var(--new-text);
+        }
+
+        .icon {
+        color: #8b5cf6;
+        margin-right: 0.75rem;
+        flex-shrink: 0;
+        }
+
+        .note {
+        border-left: 4px solid #8b5cf6;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #444;
+        line-height: 1.6;
+        background-color: var(--new-color);
+        }
+
+        .right {
+        flex: 1;
+        min-width: 300px;
+        position: relative;
+        }
+
+        .mapImage {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+   
+        }
+
+        .mapCard {
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0,
+        "wdth" 600;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        background-color:var(--backgound-color);
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: 150px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        }
+
+        .mapTitle {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--text-color);
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0,
+        "wdth" 600;
+        }
+
+        .mapSubtitle {
+        font-size: 0.85rem;
+        margin-top: 0.3rem;
+        color: var(--new-text);
+        }
+
+
+
+        /* Medium Screens: Below 1200px */
+        @media (max-width: 1200px) {
+        .LocationContainer {
+        padding: 1.5rem;
+        }
+
+        .mapCard {
+        max-width: 180px;
+        }
+        }
+
+        /* Tablets: Below 992px */
+        @media (max-width: 992px) {
+        .LocationContainer {
+        flex-direction: column;
+        gap: 2rem;
+        }
+
+        .right {
+        order: -1;
+        }
+
+        .mapCard {
+        position: static;
+        margin-top: 1rem;
+        max-width: 100%;
+        }
+
+        .mapImage {
+        height: auto;
+        }
+        }
+
+        /* Small Tablets & Large Phones: Below 768px */
+        @media (max-width: 768px) {
+        .title {
+        font-size: 1.3rem;
+        }
+
+        .features li {
+        font-size: 0.9rem;
+        }
+
+        .mapSubtitle {
+        font-size: 0.8rem;
+        }
+
+        .tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+        }
+        }
+
+        /* Phones: Below 480px */
+        @media (max-width: 480px) {
+        .LocationContainer {
+        padding: 1rem;
+        }
+
+        .note {
+        font-size: 0.85rem;
+        }
+
+        .mapCard {
+        padding: 0.8rem;
+        }
+        }
+   @media (max-width: 430px){
+           .LocationContainer {
+        max-width: 90%;
+       }}
+        /* Very Small Phones: Below 360px */
+        @media (max-width: 360px) {
+        .LocationContainer {
+        padding: 0.75rem;
+        }
+
+        .title {
+        font-size: 1.1rem;
+        }
+
+        .mapTitle {
+        font-size: 0.9rem;
+        }
+
+        .tag {
+        font-size: 0.65rem;
+        }
+        }
+
+        /* Tiny Devices: Below 280px */
+        @media (max-width: 280px) {
+        .LocationContainer {
+        padding: 0.5rem;
+        }
+
+        .mapCard {
+        padding: 0.6rem;
+        }
+
+        .mapTitle,
+        .mapSubtitle,
+        .note,
+        .features li {
+        font-size: 0.75rem;
+        }
+        }

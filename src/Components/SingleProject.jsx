@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Styles from '../Styles/SingleProject.module.css';
 import Nav from "../Components/Nav";
 import { Circles } from 'react-loader-spinner';
+import Footer from "../Components/Footer";
 
 const SingleProject = () => {
   const [project, setProject] = useState(null);
@@ -241,6 +242,9 @@ const SingleProject = () => {
             </div>
           </>
         )}
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

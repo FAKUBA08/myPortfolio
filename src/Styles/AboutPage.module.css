@@ -1,0 +1,29 @@
+.Skill{
+    transform: translateY(9rem);
+}
+.History{
+   position: relative;
+   top: 14rem;
+}
+.Service{
+    position: relative;
+    top: 18rem;
+}
+.Location{
+    position: relative;
+    top: 22rem;
+}
+@media screen and (max-width: 675px) {
+    .Skill{
+        transform: translateY(3rem);
+    }
+    .History{
+     top: 8rem;
+    }
+    .Service{
+        top: 12rem;
+    }
+    .Location{
+        top: 15rem;
+    }
+}

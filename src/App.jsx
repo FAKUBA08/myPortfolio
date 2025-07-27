@@ -7,9 +7,13 @@ import Landing from './Components/Landing';
       import ProjectPost from "./Components/ProjectPost";
       import ProjectLanding from './Components/ProjectLanding';
       import SingleProject from './Components/SingleProject'; 
+      import { ToastContainer, toast } from 'react-toastify'
+      import 'react-toastify/dist/ReactToastify.css'
 function App() {
   return (
+    
     <Router>
+                  <ToastContainer />
       <Routes>
         <Route path="/" element={<Landing />} />
                 <Route path="/about" element={<AboutPage/>} />

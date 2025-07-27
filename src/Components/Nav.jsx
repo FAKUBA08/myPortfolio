@@ -161,7 +161,7 @@ function Nav() {
                 <Linkedin size={18} />
               </a>
             </div>
-            <button className={Styles.getInTouchButton}>
+            <button className={Styles.getInTouchButton} onClick={()=>navigate("/contact")}>
               <Mail size={16} />
               Get in Touch
             </button>

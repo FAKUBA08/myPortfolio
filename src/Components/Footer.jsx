@@ -5,7 +5,9 @@ import { PiHouseBold, PiUser, PiPaperPlaneRightBold } from 'react-icons/pi';
 import { LiaLayerGroupSolid } from 'react-icons/lia';
 import { motion } from 'framer-motion';
 import { Sun, Moon, X, Home, User, FolderOpen, Mail, Github, Linkedin } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 function Footer() {
+  const navigate=useNavigate()
   return (
     <motion.div 
       className={Styles.footer}
@@ -50,10 +52,10 @@ function Footer() {
         >
           <h3>Quick Links</h3>
           <ul>
-            <li><FaHome /> Home</li>
-            <li><PiUser /> About</li>
-            <li><LiaLayerGroupSolid /> Projects</li>
-            <li><PiPaperPlaneRightBold /> Contact</li>
+            <li onClick={()=>navigate("/")}><FaHome /> Home</li>
+            <li onClick={()=>navigate("/about")}><PiUser /> About</li>
+            <li onClick={()=>navigate("/projects")}><LiaLayerGroupSolid /> Projects</li>
+            <li onClick={()=>navigate("/contact")}><PiPaperPlaneRightBold /> Contact</li>
           </ul>
         </motion.div>
 

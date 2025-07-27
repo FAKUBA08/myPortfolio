@@ -7,6 +7,7 @@ import History from '../Components/History';
 import Education  from '../Components/Education';
 import Service from '../Components/Service';
 import Location from '../Components/Location';
+import Footer from "../Components/Footer"
 function AboutPage() {
   return (
     <div className={Styles.About}>
@@ -29,6 +30,8 @@ function AboutPage() {
           <Service/>  </div>
                  <div className={Styles.Location}>
           <Location/>  </div>
+                     <div className={Styles.Location}>
+          <Footer/>  </div>
     </div>
     
   )

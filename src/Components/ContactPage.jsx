@@ -107,7 +107,7 @@ function ContactPage() {
               </div>
               <div className={Styles.contactDetails}>
                 <div className={Styles.contactLabel}>LinkedIn</div>
-                <div className={Styles.contactValue}>linkedin.com/in/fatade-ayorinde</div>
+                <div className={Styles.contactValue}>Loading.....</div>
               </div>
             </div>
 

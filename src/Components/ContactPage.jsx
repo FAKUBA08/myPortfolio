@@ -80,7 +80,7 @@ function ContactPage() {
               </div>
               <div className={Styles.contactDetails}>
                 <div className={Styles.contactLabel}>Email Address</div>
-                <div className={Styles.contactValue}>ayorinde82@gmail.com</div>
+                <div className={Styles.contactValue}>badmusfaruq08@gmail.com</div>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ function ContactPage() {
               </div>
               <div className={Styles.contactDetails}>
                 <div className={Styles.contactLabel}>Phone</div>
-                <div className={Styles.contactValue}>+234 704 367 2310</div>
+                <div className={Styles.contactValue}>+234 9025479011</div>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ function ContactPage() {
               </div>
               <div className={Styles.contactDetails}>
                 <div className={Styles.contactLabel}>GitHub</div>
-                <div className={Styles.contactValue}>github.com/Ayolent</div>
+                <div className={Styles.contactValue}>Private</div>
               </div>
             </div>
 

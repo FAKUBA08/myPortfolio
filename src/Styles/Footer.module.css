@@ -84,7 +84,7 @@ color: #8b5cf6;
 max-width: 400px;
 line-height: 1.6;
 font-size: 16px;
-color: var(--text-color);
+color: var(--new-text);
 }
 .socials {
 margin-top: 15px;
@@ -116,7 +116,7 @@ color: var(--text-color);
 .right ul {
 list-style: none;
 padding: 0;
-color: var(--text-color);
+color: var(--new-text);
 }
 
 .middle li,
@@ -127,7 +127,7 @@ gap: 10px;
 margin-bottom: 12px;
 font-size: 16px;
 cursor: pointer;
-color: var(--text-color);
+color: var(--new-text);
 }
 .middle ul li:hover {
 color: #8a5cf6f8;
@@ -146,10 +146,7 @@ color: var(--text-color);
 text-align: center;
 margin-top: 40px;
 font-size: 16px;
-color: #6b7280;
 border-top: 1px solid #e5e7eb;
-padding-top: 10px;
-color: var(--text-color);
 }
 
 @media only screen and (max-width: 480px) {

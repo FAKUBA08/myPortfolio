@@ -9,10 +9,12 @@ import Landing from './Components/Landing';
       import SingleProject from './Components/SingleProject'; 
       import { ToastContainer, toast } from 'react-toastify'
       import 'react-toastify/dist/ReactToastify.css'
+      import ScrollToTop from './Components/ScrollToTop';
 function App() {
   return (
     
     <Router>
+              <ScrollToTop />
                   <ToastContainer />
       <Routes>
         <Route path="/" element={<Landing />} />

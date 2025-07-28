@@ -128,7 +128,7 @@ const [showChat, setShowChat] = useState(false);
                 <div className={Styles.profileCard}>
                   <div className={Styles.profileImageContainer}>
                     <div className={Styles.imagePlaceholder}>
-                      <img src="/Images/21.png" alt="Fakuba" className={Styles.profileImage} />
+                      <img src=" " alt="Fakuba" className={Styles.profileImage} />
                     </div>
 
                     {/* Code Snippet Decorations */}

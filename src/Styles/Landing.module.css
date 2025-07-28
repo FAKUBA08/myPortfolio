@@ -173,7 +173,7 @@
     }
 
     .secondaryButton:hover {
-    background: hsl(262, 83%, 66%);
+    /* background: hsl(262, 83%, 66%); */
     color: var(--text-color);
     }
 

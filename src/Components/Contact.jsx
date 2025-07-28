@@ -1,5 +1,6 @@
 import React from 'react'
 import Styles from "../Styles/Contact.module.css"
+import ContactPage from '../Components/ContactPage'
 import Nav from "../Components/Nav"
 
 function Contact() {
@@ -8,8 +9,8 @@ function Contact() {
           <div>
             <Nav/>
         </div>
-        <div>
-      Hello Contact
+        <div >
+      <ContactPage/>
         </div>
     </div>
   )

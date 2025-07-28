@@ -5,40 +5,40 @@ import Styles from '../Styles/Testimonial.module.css';
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    company: "TechCorp",
-    content: "This platform has completely transformed how we manage our projects. The intuitive interface and powerful features have increased our team's productivity by 40%.",
+    name: "SQI College of ICT ",
+    role: "Intern",
+    company: "SQI",
+    content: "During Faruq's internship at SQI College of ICT, he demonstrated strong technical skills, a proactive attitude, and a deep eagerness to learn. He was actively involved in practical web development tasks and consistently delivered high-quality work on time. Faruq quickly became a reliable part of the development team, showing excellent problem-solving abilities and a strong grasp of both frontend and backend concepts",
     rating: 5,
     avatar: "SJ"
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "CEO",
-    company: "StartupX",
-    content: "Outstanding service and support. The team goes above and beyond to ensure our success. I can't imagine running our business without this solution.",
+    name: " MichaelDigitalSolution.com",
+    role: "Fullstack Developer",
+    company: "MichaelDigitalSolution",
+    content: "Faruq worked with us as a Fullstack Developer at Michael Digital Solution, where he played a crucial role in building and maintaining client applications. From creating responsive frontends in React to building efficient Node.js APIs, Faruq consistently delivered scalable and clean code. His ability to handle full project cycles—from database design to frontend polish—made him a key asset to our development team. His professionalism and problem-solving skills stood out on every project.",
     rating: 5,
     avatar: "MC"
   },
-  {
+   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Marketing Director",
-    company: "GrowthCo",
-    content: "The analytics and insights provided have helped us make data-driven decisions that resulted in a 60% increase in our conversion rates.",
-    rating: 5,
-    avatar: "ER"
-  },
-  {
-    id: 4,
-    name: "David Thompson",
-    role: "CTO",
-    company: "InnovateNow",
-    content: "Seamless integration and robust security features. Our development team was able to implement the solution in just a few days.",
+    name: "#DiasporaVote.eu",
+    role: "Fullstack Developer",
+    company: "#DiasporaVote.eu",
+    content: "As a Fullstack Developer at DiasporaVote, Faruq made a meaningful impact by developing features that enhanced user engagement and improved platform performance. He worked across the stack, integrating third-party APIs, improving accessibility, and ensuring mobile responsiveness. Faruq excelled in remote collaboration, meeting tight deadlines, and contributing valuable insights during team discussions. His contributions were vital to several of our civic-tech initiatives.",
     rating: 5,
     avatar: "DT"
-  }
+  },
+  {
+ id: 4,
+  name: "Emily Rodriguez",
+  role: "Fullstack Developer",
+  company: "GrowthCo",
+  content: "Working with Faruq as our Fullstack Developer was a turning point for our platform. His seamless integration of backend analytics and frontend dashboards gave our team the visibility we needed. The insights provided through his work helped us make data-driven decisions that resulted in a 60% increase in our conversion rates.",
+  rating: 5,
+  avatar: "ER"
+  },
 ];
 
 const Testimonial = () => {

@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import { MessageCircle } from 'lucide-react'
 import Styles from '../Styles/Membership.module.css'
 import { publicRequest } from '../Shared/RequestApi'
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-
 function Membership() {
   const [formData, setFormData] = useState({
     name: '',
@@ -30,13 +29,7 @@ function Membership() {
     try {
       const response = await publicRequest.post('/membership', formData)
       toast.success("Thank you for contacting us. We'll get back to you soon", {
-      position: 'top-right',
-        autoClose: 10000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: 'light',
+       
       })
 
       setFormData({
@@ -62,7 +55,6 @@ function Membership() {
 
   return (
     <div className={Styles.membership}>
-        
       <div className={Styles.container}>
         <div className={Styles.header}>
           <h1 className={Styles.title}>Join Our Development Program</h1>

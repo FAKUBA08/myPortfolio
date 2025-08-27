@@ -12,7 +12,8 @@ import { useNavigate } from 'react-router-dom';
 import Membership from '../Components/Membership';
 import { motion } from 'framer-motion';
 import Footer from '../Components/Footer';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 function Landing() {
   const [displayText, setDisplayText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -56,7 +57,9 @@ const [showChat, setShowChat] = useState(false);
 
   return (
     <div className={Styles.landing}>
+
       <div>
+           <ToastContainer/>
         <Nav />
       </div>
 

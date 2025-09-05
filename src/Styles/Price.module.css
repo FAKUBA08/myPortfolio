@@ -1,0 +1,242 @@
+
+
+.Price {
+background-color: var(--other-color);
+padding: 2rem 0;
+padding-bottom: 4rem;
+}
+
+.priceContainer {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+transform: translateY(1.5rem);
+
+}
+
+.header {
+background-color: var(--new-color);
+border-radius: 12px;
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+.illustration {
+flex-shrink: 0;
+}
+
+.illustrationBox {
+width: 120px;
+height: 80px;
+background: linear-gradient(135deg, #4f46e5, #7c3aed);
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+
+}
+
+.fullstackIcon {
+width: 40px;
+height: 40px;
+object-fit: contain;
+filter: brightness(0) invert(1);
+
+}
+
+.headerText {
+flex: 1;
+
+}
+
+.title {
+font-size: 1.8rem;
+font-weight: 700;
+color: var(--text-color);
+margin: 0 0 1rem 0;
+}
+
+.description {
+color: var(--text-color);
+line-height: 1.6;
+margin: 0 0 1.5rem 0;
+opacity: 0.8;
+}
+
+.curriculumButton {
+background-color: #dc2626;
+color: var(--new-color);
+padding: 0.5rem 1.5rem;
+border: none;
+border-radius: 6px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.curriculumButton:hover {
+background-color: #b91c1c;
+transform: translateY(-1px);
+}
+
+.paymentSection {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+
+}
+
+.paymentCard {
+background-color: var(--new-color);
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.paymentTitle {
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--text-color);
+margin: 0 0 1.5rem 0;
+}
+
+.packageTabs {
+display: flex;
+gap: 0.5rem;
+margin-bottom: 1.5rem;
+}
+
+.packageTab {
+
+}
+.tab {
+padding: 0.5rem 1rem;
+border: 1px solid #e5e7eb;
+background-color: var(--background-color);
+color: var(--text-color);
+border-radius: 6px;
+cursor: pointer;
+font-size: 0.9rem;
+transition: all 0.3s ease;
+}
+
+.tab.active {
+background-color: #4f46e5;
+color: white;
+border-color: #4f46e5;
+}
+
+.tab:hover:not(.active) {
+background-color: var(--other-color);
+}
+
+.packageDetails {
+border-top: 1px solid #e5e7eb;
+padding-top: 1.5rem;
+}
+
+.packageName {
+font-size: 1rem;
+font-weight: 600;
+color: #4f46e5;
+margin: 0 0 0.5rem 0;
+}
+
+.duration,
+.amount {
+color: var(--text-color);
+margin: 0.5rem 0;
+font-size: 0.9rem;
+}
+
+.paymentOptions {
+margin-top: 1rem;
+}
+
+.paymentOptions h5 {
+color: var(--text-color);
+margin: 0 0 0.5rem 0;
+font-weight: 600;
+font-size: 0.9rem;
+}
+
+.optionsList {
+list-style: none;
+padding: 0;
+margin: 0.5rem 0;
+}
+
+.optionsList li {
+color: var(--text-color);
+font-size: 0.85rem;
+margin: 0.3rem 0;
+line-height: 1.4;
+}
+
+.optionsList strong {
+color: #4f46e5;
+}
+
+.campusLink {
+color: #3b82f6;
+text-decoration: none;
+font-size: 0.85rem;
+display: inline-block;
+margin-top: 0.5rem;
+}
+
+.campusLink:hover {
+text-decoration: underline;
+}
+
+.virtualClass {
+margin-top: 1rem;
+padding-top: 1rem;
+border-top: 1px solid #e5e7eb;
+}
+
+.virtualClass h6 {
+color: var(--text-color);
+margin: 0 0 0.3rem 0;
+font-weight: 600;
+font-size: 0.85rem;
+}
+
+.virtualClass p {
+color: var(--text-color);
+margin: 0;
+font-size: 0.8rem;
+opacity: 0.8;
+line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+.headerContent {
+flex-direction: column;
+text-align: center;
+}
+
+.paymentSection {
+grid-template-columns: 1fr;
+}
+
+.priceContainer {
+padding: 0 1rem;
+}
+
+.header {
+padding: 1.5rem;
+}
+
+.title {
+font-size: 1.5rem;
+}
+}

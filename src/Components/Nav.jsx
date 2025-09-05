@@ -35,6 +35,7 @@ function Nav() {
     { to: '/about', label: 'About', icon: User },
     { to: '/projects', label: 'Projects', icon: FolderOpen },
     { to: '/contact', label: 'Contact', icon: Mail },
+    {to:'/learn', label:'Learn & Build', icon:FolderOpen}
   ];
 
   return (

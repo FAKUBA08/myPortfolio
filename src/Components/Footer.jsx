@@ -56,6 +56,7 @@ function Footer() {
             <li onClick={()=>navigate("/about")}><PiUser /> About</li>
             <li onClick={()=>navigate("/projects")}><LiaLayerGroupSolid /> Projects</li>
             <li onClick={()=>navigate("/contact")}><PiPaperPlaneRightBold /> Contact</li>
+            <li onClick={()=>navigate("/learn")}><LiaLayerGroupSolid /> Learn & Build</li>
           </ul>
         </motion.div>
 

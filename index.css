@@ -1,30 +1,30 @@
 
-:root {
-  --background-color: #ffffff;
-  --text-color: #1f2937;
-  --link-color:#1f2937d5;
-  --other-color: #f9f9f9;
-  --new-color:#ffffff;
-  --new-text: #1f2937c2;
-  /* --foot-color:#f9f9f9b9; */
-}
+    :root {
+    --background-color: #ffffff;
+    --text-color: #1f2937;
+    --link-color:#1f2937d5;
+    --other-color: #f9f9f9;
+    --new-color:#ffffff;
+    --new-text: #1f2937c2;
+    /* --foot-color:#f9f9f9b9; */
+    }
 
-body.dark {
-  --background-color: #111827;
-  --text-color: #f9fafb;
-   --link-color:#f9fafbd8;
+    body.dark {
+    --background-color: #111827;
+    --text-color: #f9fafb;
+    --link-color:#f9fafbd8;
     --other-color: #111827;
     --new-color: #1C2634;
-      --new-text: #ffffff9c;
-      /* --foot-color:#111827; */
+    --new-text: #ffffff9c;
+    /* --foot-color:#111827; */
 
-}
+    }
 
-body {
-  background-color: var(--background-color);
-  color: var(--new-text);
-  color: var(--text-color);
-  color: var(--link-color);
-/* color: var(--foot-color); */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+    body {
+    background-color: var(--background-color);
+    color: var(--new-text);
+    color: var(--text-color);
+    color: var(--link-color);
+    /* color: var(--foot-color); */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }

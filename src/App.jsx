@@ -10,6 +10,7 @@ import Landing from './Components/Landing';
       import { ToastContainer, toast } from 'react-toastify'
       import 'react-toastify/dist/ReactToastify.css'
       import ScrollToTop from './Components/ScrollToTop';
+      import Learn from './Components/Learn';
 function App() {
   return (
     
@@ -23,6 +24,7 @@ function App() {
                          <Route path="/projects" element={<ProjectLanding/>} />
                             <Route path="/project-post-Faruqkolawole@.com1" element={<ProjectPost/>} />
                              <Route path="/project/:projectId" element={<SingleProject/>} />
+                              <Route path="/learn" element={<Learn/>} />
       </Routes>
     </Router>
   );

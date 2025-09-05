@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Styles from '../styles/Price.module.css';
+import Styles from '../Styles/Price.module.css';
 import { FaReact } from "react-icons/fa";
 
 

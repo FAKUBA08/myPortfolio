@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Styles from '../Styles/Backend.module.css';
 import { FaNodeJs } from 'react-icons/fa';
+import CurriculumModal from '../Components/CurriculumModal';
 function Backend() {
   const [physicalPackage, setPhysicalPackage] = useState('standard');
   const [virtualPackage, setVirtualPackage] = useState('standard');
@@ -39,7 +40,11 @@ function Backend() {
                 They power the functionality of applications and work closely with
                 frontend developers to deliver complete solutions.
               </p>
-              <button className={Styles.curriculumButton}>View Curriculum</button>
+<CurriculumModal>
+                  <button className={Styles.curriculumButton}>
+                    View Curriculum
+                  </button>
+                </CurriculumModal> 
             </div>
           </div>
         </div>

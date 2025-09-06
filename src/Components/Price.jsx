@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Styles from '../Styles/Price.module.css';
 import { FaReact } from "react-icons/fa";
 
-
+import CurriculumModal from '../Components/CurriculumModal';
 
 
 function Price() {
@@ -41,7 +41,11 @@ function Price() {
                 With their broad expertise, Fullstack Engineers are highly valued 
                 for creating complete end-to-end solutions.
               </p>
-              <button className={Styles.curriculumButton}>View Curriculum</button>
+<CurriculumModal>
+                  <button className={Styles.curriculumButton}>
+                    View Curriculum
+                  </button>
+                </CurriculumModal> 
             </div>
           </div>
         </div>

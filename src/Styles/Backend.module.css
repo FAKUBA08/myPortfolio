@@ -74,7 +74,7 @@ opacity: 0.8;
 
 .curriculumButton {
 background-color: #dc2626;
-color: var(--new-color);
+color: white;
 padding: 0.5rem 1.5rem;
 border: none;
 border-radius: 6px;

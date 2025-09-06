@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Styles from '../Styles/Front.module.css'
 import { FaHtml5 } from 'react-icons/fa';
+import CurriculumModal from '../Components/CurriculumModal';
 function Front() {
   const [physicalPackage, setPhysicalPackage] = useState('standard');
   const [virtualPackage, setVirtualPackage] = useState('standard');
@@ -39,7 +40,11 @@ function Front() {
                 like React to create fast, interactive, and user-friendly products that connect 
                 design with functionality.
               </p>
-              <button className={Styles.curriculumButton}>View Curriculum</button>
+<CurriculumModal>
+                  <button className={Styles.curriculumButton}>
+                    View Curriculum
+                  </button>
+                </CurriculumModal> 
             </div>
           </div>
         </div>

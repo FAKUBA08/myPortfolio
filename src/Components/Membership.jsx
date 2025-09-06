@@ -4,6 +4,7 @@ import Styles from '../Styles/Membership.module.css'
 import { publicRequest } from '../Shared/RequestApi'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { useNavigate } from 'react-router-dom'
 function Membership() {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,7 +15,7 @@ function Membership() {
   })
 
   const [loading, setLoading] = useState(false)
-
+  const navigate = useNavigate()
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -93,6 +94,12 @@ function Membership() {
                   <li>Deployment</li>
                   <li>Real Projects</li>
                 </ul>
+ <button 
+                  className={Styles.packagesBtn}
+                  onClick={() => navigate("/learn", { state: { scrollTo: "price-section" } })}
+                >
+                  View Packages
+                </button>
               </div>
             </div>
           </div>

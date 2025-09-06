@@ -38,6 +38,36 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+/* Button under Fullstack card */
+.packagesBtn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #050754, #0077b6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.packagesBtn:hover {
+  background: linear-gradient(135deg, #0077b6, #050754);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .packagesBtn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
 
 .subtitle {
   font-size: 1rem;

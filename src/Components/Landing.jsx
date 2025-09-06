@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import Footer from '../Components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { useLocation } from "react-router-dom";
 function Landing() {
   const [displayText, setDisplayText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -21,9 +22,8 @@ function Landing() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showAIMessage, setShowAIMessage] = useState(true);
 const [showChat, setShowChat] = useState(false);
-
-  const words = ['responsive UIs', 'web applications', 'user interfaces', 'modern websites'];
   const navigate = useNavigate();
+  const words = ['responsive UIs', 'web applications', 'user interfaces', 'modern websites'];
   useEffect(() => {
     const currentWord = words[currentWordIndex];
     let delay = isDeleting ? 50 : 100;
@@ -53,7 +53,24 @@ const [showChat, setShowChat] = useState(false);
     return () => clearTimeout(timer);
   }, [currentCharIndex, currentWordIndex, isDeleting]);
 
+const location = useLocation();
+useEffect(() => {
+    if (location.state?.scrollTo70) {
+      const scrollHeight = document.body.scrollHeight;
+      const scrollPosition = scrollHeight * 0.7; 
 
+   
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: "smooth",
+        });
+      }, 100);
+
+ 
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   return (
     <div className={Styles.landing}>

@@ -132,7 +132,7 @@ function Backend() {
 
                       <div className={Styles.virtualClass}>
                         <h6>Virtual Class:</h6>
-                        <p>2 hours per day schedule, usually hosted on Google Meet</p>
+                        <p>2 hours per day scheduled weekly, usually hosted on Google Meet</p>
                       </div>
                     </div>
                   </>

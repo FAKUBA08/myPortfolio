@@ -148,7 +148,7 @@ useEffect(() => {
                 <div className={Styles.profileCard}>
                   <div className={Styles.profileImageContainer}>
                     <div className={Styles.imagePlaceholder}>
-                      <img src=" " alt="Fakuba" className={Styles.profileImage} />
+                      <img src="/Images/Fakuba.jpeg " alt="Fakuba" className={Styles.profileImage} />
                     </div>
 
                     {/* Code Snippet Decorations */}
@@ -165,14 +165,14 @@ useEffect(() => {
                       </div>
                     </div>
 
-                    <div className={`${Styles.codeSnippet} ${Styles.codeSnippetLeft}`}>
+                    <div className={`${Styles.codeSnippet} ${Styles.codeSnippetLeft}`} id={Styles.tail}>
                       <div className={Styles.techBadge}>
                         <div className={`${Styles.techDot} ${Styles.techDotBlue}`}></div>
                         <span className={Styles.techLabel}>Tailwind</span>
                       </div>
                     </div>
 
-                    <div className={`${Styles.codeSnippet} ${Styles.codeSnippetRight}`}>
+                    <div className={`${Styles.codeSnippet} ${Styles.codeSnippetRight}`} id={Styles.Node}>
                       <div className={Styles.techBadge}>
                         <div className={`${Styles.techDot} ${Styles.techDotBlue}`}></div>
                         <span className={Styles.techLabel}>Node.js</span>

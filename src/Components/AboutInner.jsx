@@ -54,7 +54,7 @@ function AboutInner() {
             transition={{ duration: 1 }}
           >
             <div className={Styles.imageContainer}>
-              <img src="/Images/new22.PNG" alt="Profile" className={Styles.profileImage} />
+              <img src="/Images/Fakuba.jpeg" alt="Profile" className={Styles.profileImage} />
               <div className={Styles.status}>
                 <div className={Styles.statusDot}></div>
                 <span className={Styles.statusText}>Available for work</span>

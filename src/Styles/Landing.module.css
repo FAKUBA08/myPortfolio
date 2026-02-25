@@ -218,7 +218,7 @@
     position: relative;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
-    border-radius: 50%;
+    border-radius: 60%;
     padding: 2rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     animation: float 3s ease-in-out infinite;
@@ -232,7 +232,7 @@
     .profileImage {
     width: 25rem;
     height: 25rem;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 50%;
     }
 
@@ -359,8 +359,8 @@
     }
 
     .imagePlaceholder {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     background: linear-gradient(135deg, hsl(210, 40%, 96%), hsl(220, 60%, 95%));
     border: 3px dashed hsl(262, 83%, 66%);
@@ -528,6 +528,10 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     }
+#Node, #tail{
+  display:none;
+}
+   
 
     .grid {
     grid-template-columns: 1fr;
@@ -676,8 +680,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     }
-
-    .name {
+ .name {
     font-size: 1.75rem;
     }
 

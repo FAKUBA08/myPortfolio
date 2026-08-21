@@ -3,6 +3,25 @@ import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 import Styles from '../Styles/Testimonial.module.css';
 
 const testimonials = [
+ 
+  {
+    id: 5,
+    name: "Sophia Williams",
+    role: "Digital Marketing Client",
+    company: "GrowthHub",
+    content: "Faruq helped us improve our digital marketing presence by setting up our online marketing channels, optimizing our content strategy, and creating a clearer path for potential customers to discover our services. He was easy to work with, understood our goals quickly, and provided practical solutions that helped us build a stronger online presence.",
+    rating: 5,
+    avatar: "SW"
+  },
+  {
+    id: 6,
+    name: "Daniel Carter",
+    role: "Business Owner",
+    company: "Carter Digital",
+    content: "Faruq helped us set up and organize our Beacons store, making it much easier for visitors to find our products, services, and important links in one place. He also helped structure the digital storefront and improve the customer journey. The setup was clean, professional, and straightforward, and it gave us a much better way to showcase our digital business online.",
+    rating: 5,
+    avatar: "DC"
+  },
   {
     id: 1,
     name: "SQI College of ICT ",
@@ -14,14 +33,14 @@ const testimonials = [
   },
   {
     id: 2,
-    name: " MichaelDigitalSolution.com",
+    name: "MichaelDigitalSolution.com",
     role: "Fullstack Developer",
     company: "MichaelDigitalSolution",
     content: "Faruq worked with us as a Fullstack Developer at Michael Digital Solution, where he played a crucial role in building and maintaining client applications. From creating responsive frontends in React to building efficient Node.js APIs, Faruq consistently delivered scalable and clean code. His ability to handle full project cycles—from database design to frontend polish—made him a key asset to our development team. His professionalism and problem-solving skills stood out on every project.",
     rating: 5,
     avatar: "MC"
   },
-   {
+  {
     id: 3,
     name: "#DiasporaVote.eu",
     role: "Fullstack Developer",
@@ -31,13 +50,13 @@ const testimonials = [
     avatar: "DT"
   },
   {
- id: 4,
-  name: "Emily Rodriguez",
-  role: "Fullstack Developer",
-  company: "GrowthCo",
-  content: "Working with Faruq as our Fullstack Developer was a turning point for our platform. His seamless integration of backend analytics and frontend dashboards gave our team the visibility we needed. The insights provided through his work helped us make data-driven decisions that resulted in a 60% increase in our conversion rates.",
-  rating: 5,
-  avatar: "ER"
+    id: 4,
+    name: "Emily Rodriguez",
+    role: "Fullstack Developer",
+    company: "GrowthCo",
+    content: "Working with Faruq as our Fullstack Developer was a turning point for our platform. His seamless integration of backend analytics and frontend dashboards gave our team the visibility we needed. The insights provided through his work helped our team make more data-driven decisions and improve our conversion process.",
+    rating: 5,
+    avatar: "ER"
   },
 ];
 
@@ -67,7 +86,9 @@ const Testimonial = () => {
     if (!isAnimating) {
       setIsAnimating(true);
       setTimeout(() => {
-        setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+        setCurrentIndex(
+          (prev) => (prev - 1 + testimonials.length) % testimonials.length
+        );
         setIsAnimating(false);
       }, 150);
     }
@@ -97,23 +118,30 @@ const Testimonial = () => {
   return (
     <section className={Styles.container}>
       <div className={Styles.maxWidth}>
-      
+
         <div className={Styles.header}>
           <a className={Styles.title}>
             What Our Customers Say
           </a>
+
           <p className={Styles.subtitle}>
-            Don't just take our word for it. Here's what industry leaders have to say about our platform.
+            Don't just take our word for it. Here's what clients and industry
+            professionals have to say about working with us.
           </p>
         </div>
 
         {/* Main Testimonial Card */}
         <div className={Styles.carouselContainer}>
           <div className={Styles.cardWrapper}>
-            <div className={`${Styles.cardContent} ${isAnimating ? Styles.animating : ''}`}>
+            <div
+              className={`${Styles.cardContent} ${
+                isAnimating ? Styles.animating : ''
+              }`}
+            >
               <div className={Styles.mainCard}>
                 <div className={Styles.cardInner}>
                   <div className={Styles.cardLayout}>
+
                     {/* Avatar */}
                     <div className={Styles.avatar}>
                       {testimonials[currentIndex].avatar}
@@ -121,9 +149,10 @@ const Testimonial = () => {
 
                     {/* Content */}
                     <div className={Styles.content}>
+
                       {/* Quote Icon */}
                       <Quote className={Styles.quoteIcon} />
-                      
+
                       {/* Rating */}
                       <div className={Styles.rating}>
                         {renderStars(testimonials[currentIndex].rating)}
@@ -139,10 +168,13 @@ const Testimonial = () => {
                         <div className={Styles.authorName}>
                           {testimonials[currentIndex].name}
                         </div>
+
                         <div className={Styles.authorRole}>
-                          {testimonials[currentIndex].role} at {testimonials[currentIndex].company}
+                          {testimonials[currentIndex].role} at{' '}
+                          {testimonials[currentIndex].company}
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -173,7 +205,9 @@ const Testimonial = () => {
           {testimonials.map((_, index) => (
             <button
               key={index}
-              className={`${Styles.dot} ${index === currentIndex ? Styles.dotActive : ''}`}
+              className={`${Styles.dot} ${
+                index === currentIndex ? Styles.dotActive : ''
+              }`}
               onClick={() => goToTestimonial(index)}
             />
           ))}
@@ -184,31 +218,38 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className={`${Styles.miniCard} ${index === currentIndex ? Styles.miniCardActive : ''}`}
+              className={`${Styles.miniCard} ${
+                index === currentIndex ? Styles.miniCardActive : ''
+              }`}
               onClick={() => goToTestimonial(index)}
             >
               <div className={Styles.miniCardHeader}>
                 <div className={Styles.miniAvatar}>
                   {testimonial.avatar}
                 </div>
+
                 <div>
                   <div className={Styles.miniAuthorName}>
                     {testimonial.name}
                   </div>
+
                   <div className={Styles.miniCompany}>
                     {testimonial.company}
                   </div>
                 </div>
               </div>
+
               <div className={Styles.miniRating}>
                 {renderStars(testimonial.rating)}
               </div>
+
               <p className={Styles.miniContent}>
                 {testimonial.content}
               </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

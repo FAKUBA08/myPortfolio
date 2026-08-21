@@ -23,7 +23,7 @@ function Landing() {
   const [showAIMessage, setShowAIMessage] = useState(true);
 const [showChat, setShowChat] = useState(false);
   const navigate = useNavigate();
-  const words = ['responsive UIs', 'web applications', 'user interfaces', 'modern websites'];
+const words = [ 'modern websites', 'web applications', 'digital marketing', 'Beacons stores', 'Stan Stores', 'digital products', 'sales funnels', 'social media marketing'];
   useEffect(() => {
     const currentWord = words[currentWordIndex];
     let delay = isDeleting ? 50 : 100;

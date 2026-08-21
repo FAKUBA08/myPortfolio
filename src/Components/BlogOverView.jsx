@@ -1,6 +1,13 @@
 import React from 'react';
 import Styles from '../Styles/BlogOverview.module.css';
-import { FaCode, FaDatabase, FaTools, FaLightbulb } from 'react-icons/fa';
+import {
+  FaCode,
+  FaDatabase,
+  FaTools,
+  FaLightbulb,
+  FaBullhorn,
+  FaStore
+} from 'react-icons/fa';
 
 function BlogOverView() {
   return (
@@ -27,7 +34,7 @@ function BlogOverView() {
               <span>HTML</span>
               <span>CSS</span>
               <span>Tailwind CSS</span>
-                    <span> CSS Modules</span>
+              <span>CSS Modules</span>
             </div>
           </div>
 
@@ -42,6 +49,39 @@ function BlogOverView() {
               <span>Supabase</span>
               <span>Node.js</span>
               <span>Express js</span>
+            </div>
+          </div>
+
+          {/* Digital Marketing */}
+          <div className={Styles.card}>
+            <div className={Styles.iconTitle}>
+              <FaBullhorn className={Styles.cardIcon} />
+              <h3>Digital Marketing</h3>
+            </div>
+            <div className={Styles.tags}>
+              <span>Social Media Marketing</span>
+              <span>Email Marketing</span>
+              <span>SEO</span>
+              <span>Content Marketing</span>
+              <span>Digital Advertising</span>
+              <span>Lead Generation</span>
+              <span>Sales Funnels</span>
+            </div>
+          </div>
+
+          {/* Digital Business & Stores */}
+          <div className={Styles.card}>
+            <div className={Styles.iconTitle}>
+              <FaStore className={Styles.cardIcon} />
+              <h3>Digital Business & Stores</h3>
+            </div>
+            <div className={Styles.tags}>
+              <span>Beacons</span>
+              <span>Stan Store</span>
+              <span>Digital Products</span>
+              <span>Online Stores</span>
+              <span>Landing Pages</span>
+              <span>Link-in-Bio Stores</span>
             </div>
           </div>
 

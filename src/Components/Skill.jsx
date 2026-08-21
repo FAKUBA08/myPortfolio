@@ -4,7 +4,9 @@ import Styles from '../Styles/Skill.module.css';
 function Skill() {
   return (
     <div className={Styles.skillContainer}>
-      <h2>Skills<span style={{ color: '#6c47ff' }}>.</span></h2>
+      <h2>
+        Skills<span style={{ color: '#6c47ff' }}>.</span>
+      </h2>
       <p>Technical skills and expertise</p>
 
       <div className={Styles.skillGrid}>
@@ -17,7 +19,7 @@ function Skill() {
             <li>HTML</li>
             <li>CSS</li>
             <li>Tailwind CSS</li>
-                   <li>CSS Modules</li>
+            <li>CSS Modules</li>
           </ul>
         </div>
 
@@ -27,7 +29,33 @@ function Skill() {
             <li>Firebase</li>
             <li>Express.js</li>
             <li>Node.js</li>
-            <li>MongoDb</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div className={Styles.skillCard}>
+          <h3>Digital Marketing</h3>
+          <ul>
+            <li>Social Media Marketing</li>
+            <li>Email Marketing</li>
+            <li>SEO</li>
+            <li>Content Marketing</li>
+            <li>Digital Advertising</li>
+            <li>Sales Funnels</li>
+            <li>Lead Generation</li>
+          </ul>
+        </div>
+
+        <div className={Styles.skillCard}>
+          <h3>Digital Business & Stores</h3>
+          <ul>
+            <li>Beacons</li>
+            <li>Stan Store</li>
+            <li>Digital Products</li>
+            <li>Online Stores</li>
+            <li>Landing Pages</li>
+            <li>Link-in-Bio Stores</li>
+            <li>Creator Monetization</li>
           </ul>
         </div>
 
@@ -47,6 +75,7 @@ function Skill() {
             <li>UI/UX Design</li>
             <li>Problem Solving</li>
             <li>Team Collaboration</li>
+            <li>Client Communication</li>
           </ul>
         </div>
       </div>

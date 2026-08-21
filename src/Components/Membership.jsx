@@ -51,7 +51,7 @@ function Membership() {
   }
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/09025479011', '_blank')
+    window.open('https://wa.me/+2349025479011', '_blank')
   }
 
   return (

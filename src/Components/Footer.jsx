@@ -80,7 +80,7 @@ function Footer() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
-        <p>© 2025 Badmus Faruq. All rights reserved.</p>
+        <p>© 2026 Badmus Faruq. All rights reserved.</p>
       </motion.div>
     </motion.div>
   );

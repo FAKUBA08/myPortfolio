@@ -11,12 +11,14 @@ import Landing from './Components/Landing';
       import 'react-toastify/dist/ReactToastify.css'
       import ScrollToTop from './Components/ScrollToTop';
       import Learn from './Components/Learn';
+      import WhahtsApp from './Components/WhahtsApp';
 function App() {
   return (
     
     <Router>
               <ScrollToTop />
                   <ToastContainer />
+                  <WhahtsApp />
       <Routes>
         <Route path="/" element={<Landing />} />
                 <Route path="/about" element={<AboutPage/>} />
